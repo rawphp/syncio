@@ -39,6 +39,9 @@ Accept: application/json
 
 ### Update product in store.
 
+The endpoint requires 2 requests. The first one will persist the original product payload.
+The second and any other request will compare against the first.
+
 ```http request
 PUT http://127.0.0.1:8000/api/products/432232523
 ```
